@@ -1,0 +1,176 @@
+body {
+    background: linear-gradient(to top, #2C5364, #203A43, #0F2027);
+    background-attachment: fixed;
+}
+h1 {
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+    font-family:  "Orbitron", "Silkscreen", sans-serif;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
+.icon {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-right: 40px;
+}
+.social {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.info {
+    display: flex;
+    justify-content: left;
+    font-size: small;
+    margin-right: 2.5em;
+}
+.ad {
+    display: flex;
+    justify-content: right;
+    font-size: small;
+    margin-left: 1em;
+}
+.nav-link {
+    color: #fff;
+}
+.navbar-brand {
+    font-family: "Orbitron", "Silkscreen", sans-serif;
+}
+.button {
+    border: none;
+    padding: 0.625em;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+.person-selector {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin: 2em auto 1em;
+    max-width: 100em;
+}
+.person-selector-button {
+    width: 100%;
+    background-color: rgb(25, 25, 25);
+    color: #fff;
+    font-size: 1.1em;
+}
+.active-person {
+    background: #08529d;
+    box-shadow: 0 0 0.5em 0.1em #c3c3c333;
+}
+.chat-container {
+    background: rgb(25, 25, 25);
+    font-family: 'Roboto', sans-serif;
+    border-radius: 0.5em;
+    padding: 0.5em 1.25em;
+    margin: auto;
+    max-width: 100em;
+    height: 42em;
+    box-shadow: 0 0 1.25em 0.5em #c3c3c333;
+    overflow-y: scroll;
+}
+.chat-container::-webkit-scrollbar {
+    display: none;
+}
+.chat-header {
+    margin-top: 20px;
+    margin-bottom: 1em;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+}
+.chat-header h2 {
+    font-size: 1.25em;
+    font-weight: bold;
+}
+.chat-messages {
+    height: 23em;
+    overflow-y: scroll;
+}
+.message {
+    padding: 0.625em;
+    border-radius: 1em;
+    margin-bottom: 0.625em;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+.message-sender {
+    font-weight: bold;
+    margin-bottom: 0.31em;
+}
+.message-text {
+    font-size: 1em;
+    margin-bottom: 0.31em;
+    word-wrap: break-word;
+}
+.message-timestamp {
+    font-size: 0.75em;
+    text-align: right;
+}
+.blue-bg {
+    background-color: #1c9bef;
+}
+.gray-bg {
+    background-color: rgb(70, 70, 70); 
+}
+.chat-input-form {
+    display: flex;
+    align-items: center;
+    margin-top: 2em;
+    gap: 0.625em;
+}
+.chat-input {
+    padding: 0.625em;
+    border: none;
+    border-radius: 0.5em;
+    background-color: #f5f5f5;
+    color: #333;
+    font-size: 1em;
+    flex-grow: 1;
+}
+.send-button {
+    background-color: #1c9bef;
+    color: #fff;
+    font-size: 1em;
+    font-weight: bold;
+}
+.clear-chat-button {
+    display: block;
+    margin: 2.5em auto;
+}
+.cursor-button {
+    border: none;
+    padding: 0.5em;
+    border-radius: 0.25em;
+    cursor: pointer;
+    background-color: #fff;
+    flex-grow: 0.01;
+}
+#outputArea {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 10px;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+/* 
+Could not figure out how to fit giphy onto grid system if my life depended on it.
+Also having trouble figuring out how to make media queries work.
+@media (max-width: 480) {}
+
+@media (min-width: 767) {}
+
+@media (min-width: 979) {}
+*/
